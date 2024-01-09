@@ -1,6 +1,6 @@
 # Provisioning RDS Instance
 resource "aws_db_instance" "default" {
-  allocated_storage       = 10
+  allocated_storage       = var.MYSQL_STORAGE
   identifier              = "roboshop-${var.ENV}-mysql"
   engine                  = var.MYSQL_ENGINE
   engine_version          = var.MYSQL_ENGINE_VERSION
