@@ -9,7 +9,7 @@ data "terraform_remote_state" "vpc" {
 }
 
 # Extracting the information of the secrects
-data "aws_secretmanager_secret" "secrets" {
+data "aws_secretsmanager_secret" "secrets" {
   name = "roboshop/secrets"
 }
 
