@@ -7,5 +7,5 @@ resource "aws_route53_record" "mysql_dns_record" {
 }
 
 output "MYSQL_ENDPOINT" {
-  value = aws_db_instance.default.address
+  value   = aws_db_instance.default.address
 }
